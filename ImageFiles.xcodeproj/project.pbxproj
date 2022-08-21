@@ -16,6 +16,20 @@
 		6E19EC5A28AA59AB002A55D3 /* ImagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E19EC5928AA59AB002A55D3 /* ImagesManager.swift */; };
 		6E19EC5C28AA59F9002A55D3 /* ImageFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E19EC5B28AA59F9002A55D3 /* ImageFile.swift */; };
 		6E19EC5E28AA66D8002A55D3 /* ImageFileStrorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E19EC5D28AA66D8002A55D3 /* ImageFileStrorage.swift */; };
+		6E35BBAF28B26F99009ACE69 /* SettingsViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E35BBAE28B26F99009ACE69 /* SettingsViewController2.swift */; };
+		6ECB9C2F28ADC3ED00EF524F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9C2E28ADC3ED00EF524F /* LoginViewModel.swift */; };
+		6ECB9C3128ADC5B500EF524F /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9C3028ADC5B500EF524F /* LoginService.swift */; };
+		6ECB9C3328AE5B2700EF524F /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9C3228AE5B2700EF524F /* MainCoordinator.swift */; };
+		6ECB9C3628AE5F3200EF524F /* KeychainAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9C3528AE5F3200EF524F /* KeychainAuthService.swift */; };
+		6ECB9C3A28AE61F300EF524F /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9C3928AE61F300EF524F /* ViewControllerFactory.swift */; };
+		6ECB9C3D28AFA7D300EF524F /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9C3C28AFA7D300EF524F /* UITextField+.swift */; };
+		6ECB9C3F28AFBC7C00EF524F /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9C3E28AFBC7C00EF524F /* UIButton+.swift */; };
+		6ECB9C4228AFBF5700EF524F /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9C4128AFBF5700EF524F /* LoginError.swift */; };
+		6ECB9C4428AFC78C00EF524F /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9C4328AFC78C00EF524F /* Keychain.swift */; };
+		6ECB9C4628AFC9AD00EF524F /* KeychainCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9C4528AFC9AD00EF524F /* KeychainCredentials.swift */; };
+		6ECB9C4928AFCA6200EF524F /* KeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9C4828AFCA6200EF524F /* KeychainError.swift */; };
+		6ECB9C4E28B1232F00EF524F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9C4D28B1232F00EF524F /* SettingsViewController.swift */; };
+		6EEA87B328ADB72500DE3EC7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEA87B228ADB72500DE3EC7 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +45,20 @@
 		6E19EC5B28AA59F9002A55D3 /* ImageFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFile.swift; sourceTree = "<group>"; };
 		6E19EC5D28AA66D8002A55D3 /* ImageFileStrorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFileStrorage.swift; sourceTree = "<group>"; };
 		6E19EC6328AA96C8002A55D3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6E35BBAE28B26F99009ACE69 /* SettingsViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController2.swift; sourceTree = "<group>"; };
+		6ECB9C2E28ADC3ED00EF524F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		6ECB9C3028ADC5B500EF524F /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		6ECB9C3228AE5B2700EF524F /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		6ECB9C3528AE5F3200EF524F /* KeychainAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainAuthService.swift; sourceTree = "<group>"; };
+		6ECB9C3928AE61F300EF524F /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		6ECB9C3C28AFA7D300EF524F /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		6ECB9C3E28AFBC7C00EF524F /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		6ECB9C4128AFBF5700EF524F /* LoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
+		6ECB9C4328AFC78C00EF524F /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		6ECB9C4528AFC9AD00EF524F /* KeychainCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainCredentials.swift; sourceTree = "<group>"; };
+		6ECB9C4828AFCA6200EF524F /* KeychainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainError.swift; sourceTree = "<group>"; };
+		6ECB9C4D28B1232F00EF524F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6EEA87B228ADB72500DE3EC7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +92,11 @@
 		6E19EC4228AA5765002A55D3 /* ImageFiles */ = {
 			isa = PBXGroup;
 			children = (
-				6E19EC5F28AA6A88002A55D3 /* Service */,
-				6E19EC6228AA6AB8002A55D3 /* Model */,
-				6E19EC6028AA6A9A002A55D3 /* ViewModel */,
-				6E19EC6128AA6AAD002A55D3 /* ViewController */,
-				6E19EC4328AA5766002A55D3 /* AppDelegate.swift */,
-				6E19EC4528AA5766002A55D3 /* SceneDelegate.swift */,
+				6ECB9C3B28AFA7B200EF524F /* Extensions */,
+				6ECB9C3828AE61DB00EF524F /* Factory */,
+				6ECB9C3728AE60FA00EF524F /* Service */,
+				6EEA87AC28ADB4BC00DE3EC7 /* Modules */,
+				6ECB9C3428AE5EE900EF524F /* App */,
 				6E19EC4928AA5766002A55D3 /* Main.storyboard */,
 				6E19EC4C28AA5766002A55D3 /* Assets.xcassets */,
 				6E19EC4E28AA5766002A55D3 /* LaunchScreen.storyboard */,
@@ -78,36 +105,171 @@
 			path = ImageFiles;
 			sourceTree = "<group>";
 		};
-		6E19EC5F28AA6A88002A55D3 /* Service */ = {
+		6E19EC5F28AA6A88002A55D3 /* ImageFileService */ = {
 			isa = PBXGroup;
 			children = (
 				6E19EC5D28AA66D8002A55D3 /* ImageFileStrorage.swift */,
 			);
-			path = Service;
+			path = ImageFileService;
 			sourceTree = "<group>";
 		};
-		6E19EC6028AA6A9A002A55D3 /* ViewModel */ = {
+		6E19EC6028AA6A9A002A55D3 /* ImageFIlesViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				6E19EC5928AA59AB002A55D3 /* ImagesManager.swift */,
 			);
-			path = ViewModel;
+			path = ImageFIlesViewModel;
 			sourceTree = "<group>";
 		};
-		6E19EC6128AA6AAD002A55D3 /* ViewController */ = {
+		6E19EC6128AA6AAD002A55D3 /* ImageFilesViewController */ = {
 			isa = PBXGroup;
 			children = (
 				6E19EC5728AA585C002A55D3 /* ImageFilesViewController.swift */,
 			);
-			path = ViewController;
+			path = ImageFilesViewController;
 			sourceTree = "<group>";
 		};
-		6E19EC6228AA6AB8002A55D3 /* Model */ = {
+		6E19EC6228AA6AB8002A55D3 /* ImageFileModel */ = {
 			isa = PBXGroup;
 			children = (
 				6E19EC5B28AA59F9002A55D3 /* ImageFile.swift */,
 			);
-			path = Model;
+			path = ImageFileModel;
+			sourceTree = "<group>";
+		};
+		6ECB9C3428AE5EE900EF524F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6E19EC4328AA5766002A55D3 /* AppDelegate.swift */,
+				6ECB9C3228AE5B2700EF524F /* MainCoordinator.swift */,
+				6E19EC4528AA5766002A55D3 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6ECB9C3728AE60FA00EF524F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6ECB9C4728AFCA2200EF524F /* KeyChain */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6ECB9C3828AE61DB00EF524F /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				6ECB9C3928AE61F300EF524F /* ViewControllerFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		6ECB9C3B28AFA7B200EF524F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6ECB9C3C28AFA7D300EF524F /* UITextField+.swift */,
+				6ECB9C3E28AFBC7C00EF524F /* UIButton+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6ECB9C4028AFBF4500EF524F /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				6ECB9C4128AFBF5700EF524F /* LoginError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		6ECB9C4728AFCA2200EF524F /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				6ECB9C4328AFC78C00EF524F /* Keychain.swift */,
+				6ECB9C3528AE5F3200EF524F /* KeychainAuthService.swift */,
+				6ECB9C4528AFC9AD00EF524F /* KeychainCredentials.swift */,
+				6ECB9C4828AFCA6200EF524F /* KeychainError.swift */,
+			);
+			path = KeyChain;
+			sourceTree = "<group>";
+		};
+		6ECB9C4A28B122B600EF524F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6ECB9C4C28B1231400EF524F /* ViewController */,
+				6ECB9C4B28B1230900EF524F /* ViewModel */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		6ECB9C4B28B1230900EF524F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6ECB9C4C28B1231400EF524F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6ECB9C4D28B1232F00EF524F /* SettingsViewController.swift */,
+				6E35BBAE28B26F99009ACE69 /* SettingsViewController2.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6EEA87AB28ADB49C00DE3EC7 /* ImageFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6E19EC5F28AA6A88002A55D3 /* ImageFileService */,
+				6E19EC6228AA6AB8002A55D3 /* ImageFileModel */,
+				6E19EC6028AA6A9A002A55D3 /* ImageFIlesViewModel */,
+				6E19EC6128AA6AAD002A55D3 /* ImageFilesViewController */,
+			);
+			path = ImageFiles;
+			sourceTree = "<group>";
+		};
+		6EEA87AC28ADB4BC00DE3EC7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6EEA87AD28ADB5B400DE3EC7 /* Login */,
+				6EEA87AB28ADB49C00DE3EC7 /* ImageFiles */,
+				6ECB9C4A28B122B600EF524F /* Settings */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6EEA87AD28ADB5B400DE3EC7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6ECB9C4028AFBF4500EF524F /* Error */,
+				6EEA87AE28ADB65F00DE3EC7 /* LoginService */,
+				6EEA87B128ADB6C500DE3EC7 /* LoginViewController */,
+				6EEA87AF28ADB66F00DE3EC7 /* LoginVIewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6EEA87AE28ADB65F00DE3EC7 /* LoginService */ = {
+			isa = PBXGroup;
+			children = (
+				6ECB9C3028ADC5B500EF524F /* LoginService.swift */,
+			);
+			path = LoginService;
+			sourceTree = "<group>";
+		};
+		6EEA87AF28ADB66F00DE3EC7 /* LoginVIewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6ECB9C2E28ADC3ED00EF524F /* LoginViewModel.swift */,
+			);
+			path = LoginVIewModel;
+			sourceTree = "<group>";
+		};
+		6EEA87B128ADB6C500DE3EC7 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6EEA87B228ADB72500DE3EC7 /* LoginViewController.swift */,
+			);
+			path = LoginViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,12 +343,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EEA87B328ADB72500DE3EC7 /* LoginViewController.swift in Sources */,
+				6ECB9C3F28AFBC7C00EF524F /* UIButton+.swift in Sources */,
+				6ECB9C4228AFBF5700EF524F /* LoginError.swift in Sources */,
+				6ECB9C3628AE5F3200EF524F /* KeychainAuthService.swift in Sources */,
 				6E19EC4428AA5766002A55D3 /* AppDelegate.swift in Sources */,
+				6ECB9C4428AFC78C00EF524F /* Keychain.swift in Sources */,
 				6E19EC4628AA5766002A55D3 /* SceneDelegate.swift in Sources */,
+				6ECB9C3328AE5B2700EF524F /* MainCoordinator.swift in Sources */,
+				6ECB9C3D28AFA7D300EF524F /* UITextField+.swift in Sources */,
+				6ECB9C4E28B1232F00EF524F /* SettingsViewController.swift in Sources */,
 				6E19EC5828AA585C002A55D3 /* ImageFilesViewController.swift in Sources */,
+				6ECB9C4628AFC9AD00EF524F /* KeychainCredentials.swift in Sources */,
 				6E19EC5A28AA59AB002A55D3 /* ImagesManager.swift in Sources */,
 				6E19EC5E28AA66D8002A55D3 /* ImageFileStrorage.swift in Sources */,
 				6E19EC5C28AA59F9002A55D3 /* ImageFile.swift in Sources */,
+				6ECB9C3A28AE61F300EF524F /* ViewControllerFactory.swift in Sources */,
+				6ECB9C3128ADC5B500EF524F /* LoginService.swift in Sources */,
+				6ECB9C4928AFCA6200EF524F /* KeychainError.swift in Sources */,
+				6E35BBAF28B26F99009ACE69 /* SettingsViewController2.swift in Sources */,
+				6ECB9C2F28ADC3ED00EF524F /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +514,6 @@
 				INFOPLIST_FILE = ImageFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -366,7 +541,6 @@
 				INFOPLIST_FILE = ImageFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
