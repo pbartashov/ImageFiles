@@ -17,17 +17,13 @@ final class MainCoordinator {
     private let window: UIWindow
     let authService = KeychainAuthService()
 
-    private var subscriptions: Set<AnyCancellable> = []
-
-    init(window: UIWindow
-    ) {
-        self.window = window
-    }
-
-
-    // MARK: - Views
+    private var loginFinishedSubscriptions: AnyCancellable?
 
     // MARK: - LifeCicle
+
+    init(window: UIWindow) {
+        self.window = window
+    }
 
     // MARK: - Metods
 
@@ -35,13 +31,12 @@ final class MainCoordinator {
         let viewController = ViewControllerFactory()
             .createLoginViewController(coordinator: self, authService: authService)
 
-        viewController.$loginFinishedSuccessfully
+        loginFinishedSubscriptions = viewController.$loginFinishedSuccessfully
             .sink { [weak self] success in
                 if success {
                     self?.switchToMainViewController()
                 }
             }
-            .store(in: &subscriptions)
 
         return viewController
     }
@@ -63,14 +58,10 @@ final class MainCoordinator {
         switchTo(viewController: viewController)
     }
 
-
     func switchToLoginViewController() {
         let viewController = start()
         switchTo(viewController: viewController)
     }
-
-
-
 
     func showError(_ error: Error) {
         let alert = UIAlertController(title: error.localizedDescription,
@@ -94,13 +85,12 @@ final class MainCoordinator {
                                        authService: authService,
                                        isChangePasswordMode: true)
 
-        viewController.$loginFinishedSuccessfully
+        loginFinishedSubscriptions = viewController.$loginFinishedSuccessfully
             .sink { [weak self] success in
                 if success {
                     self?.window.rootViewController?.dismiss(animated: true)
                 }
             }
-            .store(in: &subscriptions)
 
         window.rootViewController?.present(viewController, animated: true, completion: nil)
     }

@@ -11,3 +11,10 @@ struct ImageFile {
     let image: UIImage
     let url: URL
 }
+
+extension ImageFile {
+    init?(image: UIImage?, url: URL?) {
+        guard let image = image, let url = url else { return nil }
+        self.init(image: image, url: url)
+    }
+}

@@ -118,7 +118,6 @@ extension ImageFilesViewController: UIImagePickerControllerDelegate {
     }
 
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-
         dismiss(animated: true)
     }
 }

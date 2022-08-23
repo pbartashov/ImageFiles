@@ -26,17 +26,7 @@ struct ImageFileStrorage {
     }
 
     var nextFileName: String {
-        var number = 0
-        let urls = content.sorted { $0.lastPathComponent > $1.lastPathComponent }
-
-        for url in urls {
-            if let n = Int(url.lastPathComponent) {
-                number = n + 1
-                break
-            }
-        }
-
-        return String(format: "%09d", number)
+        UUID().uuidString
     }
 
     // MARK: - LifeCicle

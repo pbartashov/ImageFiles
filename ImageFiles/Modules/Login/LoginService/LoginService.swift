@@ -16,7 +16,6 @@ struct LoginService {
     var hasSavedPassword: Bool {
         authService.hasSavedPassword
     }
-    // MARK: - Views
 
     // MARK: - LifeCicle
 

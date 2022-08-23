@@ -7,9 +7,8 @@
 
 import UIKit
 
-class SettingsViewController2: UITableViewController {
+class SettingsViewController: UITableViewController {
 
-#warning("Folder structure")
     // MARK: - Properties
 
     private weak var coordinator = {
@@ -20,23 +19,32 @@ class SettingsViewController2: UITableViewController {
             .mainCoordinator
     }()
 
+    private var settingStorage: SettingsStorageProtocol = SettingsStorage()
+
     // MARK: - Views
 
+    @IBOutlet weak var sortTypeSelector: UISegmentedControl!
+
     // MARK: - LifeCicle
-
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        loadSettings()
     }
 
 
     // MARK: - Metods
 
+    private func loadSettings() {
+        let saved = settingStorage.restoreSortType()
+        sortTypeSelector.selectedSegmentIndex = saved.rawValue
+    }
 
-
+    @IBAction func sortTypeValueChanged(_ sender: UISegmentedControl) {
+        let sortType = SortType(sender.selectedSegmentIndex)
+        settingStorage.saveSortType(sortType)
+    }
 
     @IBAction func changePasswordButtonTapped(_ sender: UIButton) {
         coordinator?.presentChangePassword()
@@ -46,7 +54,7 @@ class SettingsViewController2: UITableViewController {
         coordinator?.switchToLoginViewController()
     }
 
-   @IBAction func deletePasswordButtonTapped(_ sender: UIButton) {
+    @IBAction func deletePasswordButtonTapped(_ sender: UIButton) {
         do {
             try coordinator?.authService.deletePassword()
             coordinator?.switchToLoginViewController()

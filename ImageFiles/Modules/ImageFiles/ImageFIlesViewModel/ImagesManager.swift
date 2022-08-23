@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 final class ImagesManager {
 
@@ -19,6 +20,7 @@ final class ImagesManager {
     // MARK: - Properties
 
     private let storage = ImageFileStrorage()
+    private let settingsStorage: SettingsStorageProtocol = SettingsStorage()
 
     var imageFiles: [ImageFile] = []
     
@@ -28,18 +30,26 @@ final class ImagesManager {
         storage.nextFileName
     }
 
+
+    private var subscription: AnyCancellable?
+
+    // MARK: - LifeCicle
+
+    init() {
+        defer {
+            subscription = settingsStorage.storedValueChanged
+                .sink { [weak self] in
+                    self?.loadImageFilesSorted()
+                }
+        }
+    }
+
     // MARK: - Metods
+
 
     func loadStorage() {
         imageFiles.removeAll()
-        
-        for url in storage.content {
-            if let image = UIImage(contentsOfFile: url.path) {
-                imageFiles.append(image: image, url: url)
-            }
-        }
-
-        state = .loadingCompleted
+        loadImageFilesSorted()
     }
 
     func saveToStorage(image: UIImage) {
@@ -61,11 +71,46 @@ final class ImagesManager {
             state = .itemRemoved(at: index)
         }
     }
+
+    private func loadImageFilesSorted() {
+        let sortType = settingsStorage.restoreSortType()
+
+        if imageFiles.isEmpty || sortType == .off {
+            imageFiles = storage.content
+                .compactMap {
+                    ImageFile(image: UIImage(contentsOfFile: $0.path),
+                              url: $0)
+                }
+        }
+
+        switch sortType {
+            case .off:
+                break
+
+            case .ascending:
+                imageFiles.sort { $0.url < $1.url }
+
+            case .descending:
+                imageFiles.sort { $0.url > $1.url }
+        }
+
+        state = .loadingCompleted
+    }
 }
 
 fileprivate extension Array where Element == ImageFile {
     mutating func append(image: UIImage, url: URL) {
         let imageFile = ImageFile(image: image, url: url)
         append(imageFile)
+    }
+}
+
+fileprivate extension URL {
+    static func < (lhs: URL, rhs: URL) -> Bool {
+        lhs.lastPathComponent < rhs.lastPathComponent
+    }
+
+    static func > (lhs: URL, rhs: URL) -> Bool {
+        lhs.lastPathComponent > rhs.lastPathComponent
     }
 }

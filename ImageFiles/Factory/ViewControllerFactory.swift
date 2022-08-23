@@ -13,13 +13,7 @@ struct ViewControllerFactory {
 
     private let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
-    // MARK: - Views
-
-    // MARK: - LifeCicle
-
     // MARK: - Metods
-
-
 
     func createLoginViewController(coordinator: MainCoordinator,
                                    authService: AuthServiceProtocol,
@@ -29,6 +23,7 @@ struct ViewControllerFactory {
         let viewModel = LoginViewModel(coordinator: coordinator,
                                        loginService: loginService,
                                        isChangePasswordMode: isChangePasswordMode)
+
         let loginViewController = storyboard.instantiateViewController(identifier: "LoginViewController") { coder in
             LoginViewController.init(coder: coder, viewModel: viewModel)
         }
@@ -42,4 +37,3 @@ struct ViewControllerFactory {
         return mainViewController
     }
 }
-
